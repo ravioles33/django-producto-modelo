@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/pajaro/Documents/django-prueba-1/.env"
+VIRTUAL_ENV="/home/pajar0/Documents/celery-rabbitmq-django_prueba/django-producto-modelo/.env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

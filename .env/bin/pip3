@@ -1,4 +1,4 @@
-#!/home/pajaro/Documents/django-prueba-1/.env/bin/python3
+#!/home/pajar0/Documents/celery-rabbitmq-django_prueba/django-producto-modelo/.env/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

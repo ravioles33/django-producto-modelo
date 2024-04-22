@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'productos',
+    'django_celery_results', 
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,7 @@ INTERNAL_IPS = [
     "127.0.0.1",
     # ...
 ]
+
+CELERY_BROKER_URL = 'amqp://localhost'  # Asume RabbitMQ corriendo en localhost
+CELERY_RESULT_BACKEND = 'django-db'  # Guardar resultados de tareas en la base de datos de Django
+CELERY_CACHE_BACKEND = 'django-cache'
