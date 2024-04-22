@@ -129,3 +129,12 @@ INTERNAL_IPS = [
     "127.0.0.1",
     # ...
 ]
+
+# Configuración de Celery
+CELERY_BROKER_URL = 'amqp://localhost'  # URL de conexión a RabbitMQ
+CELERY_RESULT_BACKEND = 'rpc://'  # Backend para almacenar resultados (puede ser opcional)
+
+# Configuración de RabbitMQ (opcional si deseas personalizar)
+CELERY_TASK_DEFAULT_QUEUE = 'default'
+CELERY_TASK_DEFAULT_EXCHANGE = 'default'
+CELERY_TASK_DEFAULT_ROUTING_KEY = 'default'
