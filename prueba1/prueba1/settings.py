@@ -138,3 +138,6 @@ CELERY_RESULT_BACKEND = 'rpc://'  # Backend para almacenar resultados (puede ser
 CELERY_TASK_DEFAULT_QUEUE = 'default'
 CELERY_TASK_DEFAULT_EXCHANGE = 'default'
 CELERY_TASK_DEFAULT_ROUTING_KEY = 'default'
+
+###
+CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
