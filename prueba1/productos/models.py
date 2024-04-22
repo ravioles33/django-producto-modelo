@@ -9,3 +9,10 @@ class Producto(models.Model):
     tipo = models.CharField(max_length=255,)
     en_promocion = models.BooleanField()
     destacado = models.BooleanField()
+
+class RandomLetter(models.Model):
+    letter = models.CharField(max_length=1)  # Solo un carácter para la letra
+    created_at = models.DateTimeField(auto_now_add=True)  # Fecha de creación automática
+
+    def __str__(self):
+        return self.letter
